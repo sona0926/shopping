@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+    <style type="text/css">
+        * {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        .main {
+            position: absolute;
+            margin: 0%;
+            padding: 0%;
+            height: 100vh;
+            width: 100%;
+
+        }
+
+        .bgimg {
+            height: 100vh;
+            width: 100%;
+            position: absolute;
+            margin-top: 0;
+            margin-left: 0;
+            z-index: -5;
+        }
+
+        .logo {
+            position: fixed;
+            height: 40px;
+            width: 30px;
+            margin-top: 10px;
+            margin-left: 1100px;
+            z-index: 5;
+            border: 7px solid black;
+        }
+
+        .navbar {
+            position: fixed;
+            border: 2px solid rgb(255, 136, 0);
+            box-shadow: 0 0 20px rgb(201, 124, 72);
+            height: 40px;
+            width: 100%;
+            background-color: rgb(237, 233, 228);
+            margin-top: 15PX;
+            z-index: 3;
+        }
+
+        li {
+            display: inline;
+            margin: 10px;
+            transition: 0.5s;
+            border: none;
+            padding-top: 3px;
+            padding-left: 12px;
+            padding-right: 12px;
+            padding-bottom: 3px;
+            border-radius: 10px;
+            text-decoration: none;
+
+
+        }
+
+        .nav-item {
+            margin: 13PX;
+            font-size: 15PX;
+            font-weight: 300;
+
+        }
+
+        li:hover {
+            margin: 10PX;
+            font-size: 17PX;
+            font-weight: 400;
+            color: rgb(4, 4, 4);
+        }
+
+        .home {
+            position: absolute;
+            margin-top: 80px;
+            margin-left: 100px;
+            height: 400px;
+            width: 600px;
+            background-color: transparent;
+            z-index: -3;
+        }
+
+        SPAN {
+            position: absolute;
+            margin: 40PX;
+            margin-left: 20PX;
+            color: rgb(144, 10, 10);
+            font-family: cursive;
+            font-weight: 700;
+            font-size: 50PX;
+
+        }
+
+        p {
+            position: absolute;
+            margin: 190px;
+            margin-left: 40px;
+            font-size: 15px;
+            font-weight: 300;
+            font-family: cursive;
+        }
+
+        .viewdeal {
+            position: absolute;
+            margin: 320px;
+            margin-left: 10px;
+            height: 50px;
+            width: 140px;
+            background-color: black;
+            color: bisque;
+            font-size: 20px;
+            font-weight: 300;
+            border-radius: 50px;
+            cursor: pointer;
+
+        }
+
+        .viewdeal:hover {
+            background-color: rgb(255, 0, 0);
+            color: rgb(1, 1, 1);
+
+
+        }
+
+        .prime {
+            position: absolute;
+            height: 310px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            margin-top: 640px;
+            z-index: -4;
+        }
+
+        .btnblock1 {
+            height: 200px;
+            width: 250px;
+            background-color: rgb(255, 255, 255);
+            margin-top: 50px;
+            margin-left: 60px;
+        }
+
+        .btnblock2 {
+            height: 200px;
+            width: 250px;
+            background-color: rgb(255, 255, 255);
+            margin-top: -200px;
+            margin-left: 540px;
+        }
+
+        .btnblock3 {
+            height: 200px;
+            width: 250px;
+            background-color: rgb(255, 255, 255);
+            margin-top: -200px;
+            margin-left: 1000px;
+        }
+
+        .deals {
+            position: absolute;
+            margin-top: 950px;
+            margin-left: 0;
+            height: 500px;
+            width: 100%;
+            background-color: burlywood;
+            z-index: -1;
+
+        }
+        .womensec {
+            position: absolute;
+            margin-left: 0;
+            height: 730px;
+            width: 20%;
+            background-color: rgb(0, 0, 0);
+            z-index: 1;
+        }
+        #womenclothes{
+            margin-top: 2px;
+            height: 145px;
+            width: 250px;
+
+        }
+        #womenclothes:hover{
+            margin-top: 2px;
+            height: 160px;
+            width: 290px;
+
+        }
+
+
+        .mendeals {
+            position: absolute;
+            margin-top: 1700px;
+            margin-left: 0;
+            height: 500px;
+            width: 100%;
+            background-color: burlywood;
+            z-index: 1;
+
+        }
+
+        .contacts {
+            position: absolute;
+            margin-top: 2420px;
+            margin-left: 0;
+            height: 00px;
+            width: 100%;
+            background-color: rgb(255, 145, 0);
+            z-index: 1;
+        }
+
+        .contact-details {
+            position: absolute;
+            margin-left: 0;
+            height: 80vh;
+            width: 250px;
+            background-color: rgb(11, 11, 11);
+            z-index: 1;
+        }
+        #contactbuttons{
+            height: 89px;
+            width: 250px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="bgimg">
+            <img src="https://www.searchenginejournal.com/wp-content/uploads/2022/08/google-shopping-ads-6304dccb7a49e-sej-1520x800.webp"
+                alt="" width="100%">
+        </div>
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIwPd7h8FYUdnfGMp56OjiZUXS66YkHta7fg&usqp=CAU"
+                alt="" height="80px" width="80px">
+        </div>
+        <div class="navbar">
+            <div class="nav-item">
+                <ul type="none">
+                    <li><a style="text-decoration: none; color: black;" href="#home">HOME</a></li>
+                    <li><a style="text-decoration: none; color: black;" href="#prime">PRIME</a></li>
+                    <li><a style="text-decoration: none; color:black ;" href="#women">WOMEN</a></li>
+                    <li><a style="text-decoration: none; color: black;" href="#men">MEN</a></li>
+                    <li><a style="text-decoration: none; color: black;" href="#contacts">CONTACTS</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!--home -->
+        <div id="home" class="home">
+
+            <span> END OF SEASON SALE !!</span>
+            <P align="justify">___There’s nothing like a day of shopping to make you feel good. Whether you’re
+                buying
+                something for
+                yourself or for someone else, the sense of satisfaction you get from finding the perfect item is
+                hard to
+                beat.</P>
+            <button class="viewdeal"><a href="https://www.myntra.com/">view deals</a></button>
+        </div>
+    </div>
+    <!--prime member -->
+    <div id="prime" class="prime">
+
+        <div class="btnblock1"> <img src="https://img.freepik.com/premium-vector/delivery-truck-icon_118813-9969.jpg"
+                style="height:200px ;width: 250px;mix-blend-mode: darken;"></div>
+        <div class="btnblock2"> <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPJJgLGgRiDBHPGSapZ5eT7lp8ezkZOZtfEZWIDCI9&s"
+                style="height:200px ;width: 250px;mix-blend-mode: darken;"></div>
+        <div class="btnblock3"> <img src="https://cdn-icons-png.flaticon.com/512/9359/9359569.png"
+                style="height:200px ;width: 250px;mix-blend-mode: darken;"></div>
+
+
+
+    </div>
+    <!--women section-->
+    <div id="women" class="deals">
+        <div>
+            <img src="https://wallpaperaccess.com/full/3166591.jpg" style="height:130vh;width:100%; z-index: -5;position: absolute;"
+                alt="">
+            <div class="womensec">
+            <a href="https://www.myntra.com/women-top?rawQuery=women%20top">   <button id="womenclothes"><img src="https://img.freepik.com/free-photo/still-life-spring-wardrobe-switch_23-2150479001.jpg?size=626&ext=jpg&ga=GA1.1.1018679232.1697255722&semt=ais" style="height: 145px;width:250px;"></button></a>
+            <a href="https://www.myntra.com/jeans-women?rawQuery=jeans%20women">   <button id="womenclothes"><img src="https://img.freepik.com/free-photo/jeans_1203-8093.jpg?size=626&ext=jpg&ga=GA1.1.1018679232.1697255722&semt=ais"style="height: 145px;width:250px;"></button></a>
+            <a href="https://www.myntra.com/traditional-wear?rawQuery=traditional%20wear">     <button id="womenclothes"><img src="https://img.freepik.com/free-photo/young-indian-woman-wearing-sari_23-2149400867.jpg?size=626&ext=jpg&ga=GA1.1.1018679232.1697255722&semt=ais"style="height: 145px;width:250px;"></button></a>
+            <a href="https://www.myntra.com/"> <button id="womenclothes"><img src="https://img.freepik.com/free-photo/women-rsquo-s-white-high-heel-shoes-fashion_53876-106046.jpg?size=626&ext=jpg&ga=GA1.1.1018679232.1697255722&semt=ais"style="height: 145px;width:250px;"></button></a>
+            <a href="https://www.myntra.com/women-watches?rawQuery=women%20watches">   <button id="womenclothes"><img src="https://img.freepik.com/free-photo/charming-lady-with-red-lips-posing-pink-background-serious-young-woman-white-suit-glasses-looks-camera-isolated-backdrop_197531-18650.jpg?size=626&ext=jpg&ga=GA1.1.1018679232.1697255722&semt=ais"style="height: 145px;width:250px;"></button></a>
+
+            </div>
+        </div>
+
+    </div>
+    <!--men section-->
+    <div id="men" class="mendeals">
+        <img src="https://img.freepik.com/premium-photo/fun-cartoon-teenage-boy-shopping_183364-64744.jpg?size=626&ext=jpg&ga=GA1.1.1018679232.1697255722&semt=ais"
+            style="height:130vh;width:100%; z-index: -5; position: absolute;" alt="">
+    </div>
+    <!--contact section-->
+    <div id="contacts" class="contacts">
+        <div>
+            <img src="https://img.freepik.com/premium-photo/businessman-hand-holding-pressing-icon-phone-mail-telephone-message-post-person-user-customer-service-call-center-contact-us-concept-banner-copy-space-contact-methods_150455-14109.jpg?w=1380"
+                style="height:80vh;width:100%; z-index: -5; position: absolute;" alt="">
+            <div class="contact-details">
+            
+               <button id="contactbuttons">instagram</button></a>
+                <button id="contactbuttons">facebook</button>
+                <button id="contactbuttons" >mailid</button>
+                <button id="contactbuttons">phone-no</button>
+                <button id="contactbuttons">message</button>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
